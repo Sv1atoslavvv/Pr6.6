@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завдання 6 - Відправлення e-mail</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="mail-form">
+        <h3>Відправити повідомлення</h3>
+
+        <form action="mailto:teacher@example.com" method="post" enctype="text/plain">
+            <table>
+                <tr>
+                    <td>Ваше ім'я:</td>
+                    <td><input type="text" name="SenderName" size="30"></td>
+                </tr>
+
+                <tr>
+                    <td>Тема листа:</td>
+                    <td><input type="text" name="Subject" size="30"></td>
+                </tr>
+
+                <tr>
+                    <td valign="top">Повідомлення:</td>
+                    <td>
+                        <textarea name="MessageBody" cols="32" rows="5"></textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="center">
+                        <input type="submit" value="Відправити">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>
